@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑动选择单词数量</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="books.ico">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section>
+        <h1>滑动选择单词数量</h1>
+        <input type="range" id="word-slider" min="0" max="10" value="5" oninput="updateLabel(this.value)">
+        <label for="word-slider" id="slider-label">5</label>
+        <br>
+        <button onclick="startPractice()">开始练习</button>
+    </section>
+</body>
+
+</html>
